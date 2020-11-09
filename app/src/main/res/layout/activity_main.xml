@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukkan URL Website" />
+
+    <Button
+        android:id="@+id/btn_URL"
+        android:onClick="openweb"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Website" />
+
+    <EditText
+        android:id="@+id/et_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukkan Nama Lokasi" />
+
+    <Button
+        android:id="@+id/btn_loc"
+        android:onClick="openmaps"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Google Map" />
+
+    <EditText
+        android:id="@+id/et_teks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukkan pesan yang mau dikirim" />
+
+    <Button
+        android:id="@+id/btn_teks"
+        android:onClick="sendtext"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Pesan" />
+</LinearLayout>
